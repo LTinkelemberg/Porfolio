@@ -1,0 +1,80 @@
+/*Estilos para el background*/
+/*@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body {
+        background-color: darkslategray;
+        color: white;
+        padding-left: 10px;
+        padding-right: 100px;
+        
+        border-style: solid;
+        border-color: white;
+        border-width: 3px;
+        border-radius: 0px;
+        margin: 20px;
+    }
+    /*Podria separar los estilos mejor para que cada elemento sea mas independiente*/
+h1 {
+        text-align: left;
+        padding-left: 10px;
+        font-family: 'Varela', sans-serif;
+        display: flex;
+    }
+.developer {
+        font-family: 'Varela', sans-serif;
+        font-size: 20px;
+        padding-left: 10px;
+        margin-top: -20px;
+    }
+aside {
+        background-color: dimgray;
+        float: right;  
+        padding: 15px;            
+    }
+.flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+img {
+        width: 100px;
+    }
+img:hover{
+        transform: scale(1.2);
+    }
+p {
+        font-family: 'Lato', sans-serif;
+    }
+.list-fonts {
+    font-family: 'Lato', sans-serif;
+    }
+.subtitle { 
+        font-family: 'Lato', sans-serif;
+}
+
+.navbar {   
+        color:white;
+        float: right;
+        /*margin-top:-100px; margin-left: 0px; */
+        display: flex;
+    }
+.flex-container2 {
+        display: flex;
+        justify-content: space-between;
+    }
+#homebar {
+    list-style-type: none;
+    }
+li a {
+    display: block;
+    font-family: 'Varela', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 3px;
+    }
+li a:hover {
+    background-color: #555;
+    color: white;
+ }
+
