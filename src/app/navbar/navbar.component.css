@@ -1,0 +1,14 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    color: whitesmoke;
+    font-family:'Varela', sans-serif;
+    text-decoration: none;
+}
+li a {
+    color: whitesmoke;
+    text-decoration: none;
+}

@@ -1,4 +1,6 @@
-.body {
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
     background: linear-gradient(Black 50%, rgb(34, 114, 255));
     color: white;
     padding-left: 10px;
@@ -10,3 +12,4 @@
     border-radius: 0px;
     margin: 20px;
 }
+
