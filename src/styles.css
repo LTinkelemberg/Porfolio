@@ -1,15 +1,16 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    background: linear-gradient(Black 50%, rgb(34, 114, 255));
+body {
+    /*background: linear-gradient(Black 50%, rgb(34, 114, 255));*/
+    background-color: rgb(34, 114, 255);
     color: white;
     padding-left: 10px;
     padding-right: 100px;
-    
     border-style: solid;
     border-color: white;
-    border-width: 3px;
-    border-radius: 0px;
+    border-width: 5px;
+    border-radius: 6px;
     margin: 20px;
 }
-
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}

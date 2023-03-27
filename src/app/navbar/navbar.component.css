@@ -7,8 +7,18 @@ li {
     color: whitesmoke;
     font-family:'Varela', sans-serif;
     text-decoration: none;
+    justify-content: space-between;
+    margin-left:20px ;
+    margin-right: 20px;
+    padding:20px;
+    
 }
 li a {
     color: whitesmoke;
     text-decoration: none;
 }
+li a:hover {
+    background-color: rgb(34, 114, 255);
+    color: white;
+ }
+
