@@ -21,4 +21,6 @@ li a:hover {
     background-color: rgb(34, 114, 255);
     color: white;
  }
-
+.modalletra {
+    color: black;
+}
