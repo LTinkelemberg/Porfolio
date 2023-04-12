@@ -1,0 +1,11 @@
+.flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+}
+img {
+    width: 100px;
+}
+img:hover{
+    transform: scale(1.2);
+}
