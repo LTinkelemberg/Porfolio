@@ -8,18 +8,29 @@
         <!-- Dentro de este elemento head, puedo poner elementos link para conectar con otros archivos
              por ejemplo puedo poner un elemento link que conecte con una hoja de estilo style que sea un archivo css-->
         <!-- CSS, a partir de ahora pondre todas las partes de CSS-->
+        <!-- Colors used: Neon blue (#2272FF), black (#1D1D1) -->
+        <!--Para agregar Bootstrap a Angular
+            npm i Bootstrap
+        "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]-->
         <link rel="stylesheet" href="styles.css">
-        <style>
-                
+        <style>    
         </style>
-        
+        <script type="text/javascript"> 
+        </script> 
     </head>
-    <body name="viewport">  
+    <body class="wrapper" name="viewport">  
     <div class="flex-container2">
-        <div><header>
+        <div> <!--Ya puse en Angular esta parte-->
+            <header>
             <h1>Tinkelemberg, Cristian Luca</h1>
             <h2 class="developer">Web Developer</h2>
-        </header>
+            </header>
         </div>
         <!--Aqui pongo la barra de navegacion que consistira en 4 elementos, Home, Proyectos, -->
         <div>
@@ -77,6 +88,8 @@
         </div>
         <footer>
         <p>Esto no deberia estar aca, pero debo poner cosas aqui</p>
+        <!--Con este boton de abajo planeo cambiar el estilo de la pagina a un modo oscuro-->
+        <button type="button" class=""></button>"
         </footer>
     </body>
 </html>
