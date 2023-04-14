@@ -5,7 +5,24 @@
 }
 img {
     width: 100px;
+    height: 100px;
+    
 }
 img:hover{
     transform: scale(1.2);
 }
+.carta {
+    justify-content: center;
+    display: block;
+    color: black;
+    
+}
+.carrusel {
+    padding-left: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
