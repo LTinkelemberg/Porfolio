@@ -1,5 +1,53 @@
+<nav class="navbar">
+  <div class="flex background">
+    <div class="navbar" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li><a class="navbar-brand nav-link active">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" data-bs-toggle="modal" data-bs-target="#loginModal" >Iniciar Sesión</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="modal fade modalletra" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 color" id="exampleModalLabel">Iniciar Sesion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form [formGroup]="loginForm">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label color">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+                                          <div *ngIf="email?.invalid && (email?.dirty ||email?.touched)"
+                                          class="text-danger">
 
-<div>
+                                          <div *ngIf="email?.errors?.['required']">
+                                          email is required.
+                                          </div>
+                                          <div *ngIf="email?.errors?.['email']">
+                                           Debe ser un email autorizado.
+                                          </div>
+                                          </div>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label color">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" formControlName="contraseña">
+              </div>
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="login()">Iniciar Sesion</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<div>
     <nav>
             <ul id="homebar">
                 <li><a href="#">Portfolio</a></li>
@@ -45,4 +93,4 @@
           </div>
         </div>
       </div>
-    
+    -->
