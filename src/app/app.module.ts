@@ -12,6 +12,7 @@ import { EducacionComponent } from './Content/educacion/educacion.component';
 import { ContactoComponent } from './Content/contacto/contacto.component';
 import { CvComponent } from './Content/cv/cv.component';
 import { FooterComponent } from './Shared/footer/footer.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterComponent } from './Shared/footer/footer.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
