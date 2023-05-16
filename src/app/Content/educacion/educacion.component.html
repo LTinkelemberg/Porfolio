@@ -1,13 +1,21 @@
 <div style="display: row;">
-<div><h2>Educación</h2></div><button type="button" class="btn btn-primary" data-bs-target="#modalEducacion" *ngIf="userLoginOn">Editar</button>
+<div><h2>Educación</h2></div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEducacion" *ngIf="userLoginOn" >Nuevo</button><!-- hay que volverlo a poner dentro del boton cuando este bien hecho el formulario-->
 </div>
 <div class="contenido">
-<ul>
-    <li>EGB3 y polimodal bilingüe. Modalidad Humanidades y ciencias sociales, Colegio Nueva Concepción (Marzo 2012 - Diciembre 2017)</li>
+  <table>
+   <tbody>
+      <td *ngFor="let datosEducacion from datosEducacion">
+          <tr>{{datosEducacion.educacion_institucion}}</tr>
+          <tr>{{datosEducacion.educacion_periodo}}</tr>
+      </td>
+    </tbody>
+  </table>
+  <!--<ul>
+    <li>EGB3 y polimodal bilingüe. Modalidad Humanidades y ciencias sociales, Colegio Nueva Concepción (Marzo 2012 - Diciembre 2017)</li><button class="btn btn-secondary" *ngIf="userLoginOn">Editar</button>
     <li>Ingeniería Mecanica, Universidad Nacional de Tucumán (Marzo 2018 - Octubre 2022)</li>
     <li>Ingeniería Mecanica, Universidad Tecnologica Nacional - Facultad Regional Tucumán (Octubre 2022 - Presente)</li>
 
-</ul>
+</ul>-->
 <h2>Reconocimientos Otorgados</h2>
 <ul>
     <li>Intercambio en Ashford School, Ashford,
@@ -22,34 +30,27 @@
     <li>Aleman (Basico)</li>
 </ul>
 </div>
-<div class="modal" tabindex="-1" id="modalEducacion"> <!--Modal del CRUD-->
+<div class="modal fade" id="modalEducacion" tabindex="-1" aria-hidden="true"><!--Modal del CRUD-->
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title modalletra">Agregar</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <form> <!--Formulario dentro del modal del CRUD-->
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <label for="exampleInputEmail1" class="form-label modalletra">Ingresar el Nombre de la Institucion</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <label for="exampleInputPassword1" class="form-label modalletra">Ingresar el periodo de Cursado</label>
                   <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
               </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <a href="educacion/creareducacion/"><button type="button" class="btn btn-primary" >Agregar</button></a> <!--(click)="createEducacion.datosEducacion.DatosEducacion"-->
         </div>
       </div>
     </div>

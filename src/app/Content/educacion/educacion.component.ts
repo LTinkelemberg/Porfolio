@@ -1,6 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { LoginService } from 'src/app/service/auth/login.service';
 import { User } from 'src/app/service/auth/user';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-educacion',

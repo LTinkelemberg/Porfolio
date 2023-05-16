@@ -9,7 +9,7 @@ import { User } from './user';
 })
 export class LoginService {
   currentUserLoginOn: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
-  currentUserData: BehaviorSubject<User> = new BehaviorSubject<User>({id:0, email:''});
+  currentUserData: BehaviorSubject<User> = new BehaviorSubject<User>({idUsuario:0, email:''});
   url: string= "http://localhost:8080/auth/"
 
   constructor(private http: HttpClient) { }
